@@ -55,6 +55,8 @@
             if (array_key_exists($project, $siteoptions)) {
               if (is_array($siteoptions[$project])) {
                 $displayname = array_key_exists('displayname', $siteoptions[$project]) ? $siteoptions[$project]['displayname'] : $project;
+              } else {
+                $displayname = $siteoptions[$project];
               }
             }
           }
