@@ -47,21 +47,29 @@
                   break;
                 }
               }
-            }
-            echo $icon_output;
+              echo $icon_output;
 
-            // Display a link to the site
-            $displayname = $project;
-            if (array_key_exists($project, $siteoptions)) {
-              if (is_array($siteoptions[$project])) {
-                $displayname = array_key_exists('displayname', $siteoptions[$project]) ? $siteoptions[$project]['displayname'] : $project;
-              } else {
-                $displayname = $siteoptions[$project];
+              // Display a link to the site
+              $displayname = $project;
+              if (array_key_exists($project, $siteoptions)) {
+                if (is_array($siteoptions[$project])) {
+                  $displayname = array_key_exists('displayname', $siteoptions[$project]) ? $siteoptions[$project]['displayname'] : $project;
+                } else {
+                  $displayname = $siteoptions[$project];
+                }
               }
+              printf('<a class="site" href="%1$s">%2$s</a>', $siteroot, $displayname);
+
+              echo '</li>';
             }
+            echo '</ul>';
           }
         ?>
       </content>
+
+      <footer class="cf">
+        <p></p>
+      </footer>
     </div>
   </body>
 
