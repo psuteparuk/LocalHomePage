@@ -43,7 +43,7 @@
               $icon_output = '<span class="no-img"></span>';
               foreach ($icons as $icon) {
                 if (file_exists($file . '/' . $icon)) {
-                  $icon_output = sprintf('<img src="%1$s/%2$s', $siteroot, $icon);
+                  $icon_output = sprintf('<img src="%1$s/%2$s" />', $siteroot, $icon);
                   break;
                 }
               }

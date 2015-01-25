@@ -48,10 +48,8 @@ li a {
 }
 
 .icon, .sites img {
-  float: right;
   font-size: .7rem;
   display: inline-block;
-  text-indent: -10000px;
   background-size: 1.2rem;
   background-repeat: no-repeat;
   background-position: center center;
