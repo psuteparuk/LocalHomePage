@@ -1,17 +1,23 @@
 <?php
   /* Directory Name(s) */
   // change to the directory where you keep the sites
-  $dir = array("Users/psuteparuk/www/sites/*");
+  $dir = array("/Users/psuteparuk/www/sites/*");
 
   /* Top Level Domain */
   $tld = 'dev';
+
+  /*
+   * Icon file names you would like to display next to the link to each site.
+   * In order of the priority they should be used.
+   */
+  $icons = array('logo_p.png', 'logo_test.png');
 
   /*
    * Development tools you want displayed in the top navigation bar. Each item should be
    * an array containing keys 'name' and 'url'.
    */
   $devtools = array(
-      array('name' => 'GitHub', 'url' => 'https://github.com/psuteparuk')
+      array('name' => 'My GitHub', 'url' => 'https://github.com/psuteparuk')
     );
 
   /*
