@@ -58,7 +58,7 @@
                   $displayname = $siteoptions[$project];
                 }
               }
-              printf('<a class="site" href="%1$s">%2$s</a>', $siteroot, $displayname);
+              printf('<a class="site" href="%1$s" target="_blank">%2$s</a>', $siteroot, $displayname);
 
               echo '</li>';
             }
