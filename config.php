@@ -10,7 +10,7 @@
    * Icon file names you would like to display next to the link to each site.
    * In order of the priority they should be used.
    */
-  $icons = array('logo_p.gif', 'logo_test.png');
+  $icons = array('logo_catan.png', 'logo_p.gif', 'logo_test.png');
 
   /*
    * Development tools you want displayed in the top navigation bar. Each item should be
